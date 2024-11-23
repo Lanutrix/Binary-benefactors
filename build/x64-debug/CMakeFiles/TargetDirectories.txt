@@ -1,0 +1,5 @@
+C:/xackoton/out/build/x64-debug/CMakeFiles/edit_cache.dir
+C:/xackoton/out/build/x64-debug/CMakeFiles/rebuild_cache.dir
+C:/xackoton/out/build/x64-debug/xackoton/CMakeFiles/xackoton.dir
+C:/xackoton/out/build/x64-debug/xackoton/CMakeFiles/edit_cache.dir
+C:/xackoton/out/build/x64-debug/xackoton/CMakeFiles/rebuild_cache.dir

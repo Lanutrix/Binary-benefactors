@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="d.jpg">
+      <Filter>Source Files</Filter>
+    </Image>
+    <Image Include="cat.jpeg">
+      <Filter>Source Files</Filter>
+    </Image>
+    <Image Include="t.jpg">
+      <Filter>Source Files</Filter>
+    </Image>
+    <Image Include="bl.jpeg">
+      <Filter>Source Files</Filter>
+    </Image>
+    <Image Include="bus.jpg">
+      <Filter>Source Files</Filter>
+    </Image>
+    <Image Include="test.jpg">
+      <Filter>Source Files</Filter>
+    </Image>
+    <Image Include="zidane.jpg">
+      <Filter>Source Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="yolov8\README.md">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="yolov8m-face.onnx">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="yolo11m.onnx">
+      <Filter>Source Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="haarcascade_frontalface_alt.xml">
+      <Filter>Source Files</Filter>
+    </Xml>
+    <Xml Include="lbpcascade_frontalface.xml">
+      <Filter>Source Files</Filter>
+    </Xml>
+    <Xml Include="lbpcascade_profileface.xml">
+      <Filter>Source Files</Filter>
+    </Xml>
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="v1.mp4">
+      <Filter>Source Files</Filter>
+    </Media>
+    <Media Include="v2.mp4">
+      <Filter>Source Files</Filter>
+    </Media>
+    <Media Include="v3.mp4">
+      <Filter>Source Files</Filter>
+    </Media>
+    <Media Include="v4.mp4">
+      <Filter>Source Files</Filter>
+    </Media>
+    <Media Include="c.mp4">
+      <Filter>Source Files</Filter>
+    </Media>
+    <Media Include="v1o.mp4">
+      <Filter>Source Files</Filter>
+    </Media>
+    <Media Include="out.mp4">
+      <Filter>Source Files</Filter>
+    </Media>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="yolov8\CMakeLists.txt">
+      <Filter>Source Files</Filter>
+    </Text>
+    <Text Include="classes.txt">
+      <Filter>Source Files</Filter>
+    </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="yolov8\inference.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="yolov8\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="yolov8\inference.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
