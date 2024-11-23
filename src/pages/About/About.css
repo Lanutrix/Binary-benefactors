@@ -20,6 +20,8 @@
   align-items: center;
   background: #efefef;
   border-radius: 30px;
+  width: 590px;
+  height: 283px
 }
 
 .total-flex{
@@ -34,14 +36,37 @@
   font-weight: 700;
   font-size: 14px;
   line-height: 17px;
+  text-shadow: 4px 2px 9px #0000000f;
 }
  
-.surnameO{
+.surname1{
+  color: #DAB6E3;
+}
+
+.surname2{
+  color: #F1D298;
+}
+
+.surname3{
   color: #68DA9E;
 }
 
-.text-cart{
-  padding: 0 20px;
+.surname4{
+  color: #5970AB;
+}
+
+.text-cart {
+  padding: 0 20px; /* Отступы внутри контейнера */
+  border-radius: 8px; /* Закругление углов */
+  width: 307px; /* Установка максимальной ширины */
+  margin: 0 auto; /* Центрирование контейнера на странице */
+}
+.linee {
+  display: block; 
+  margin: 10px auto; 
+  width: 90%; 
+  border-top: 0.5px solid #000; 
+  content: '';
 }
 
 .skilz{
@@ -50,19 +75,36 @@
   font-weight: 400;
   font-size: 13px;
   line-height: 26px;
-  /* identical to box height */
   letter-spacing: 0.05em;
   color: #000000;
+  margin: 10px 0;
 }
 
-.fab{
-  margin: 0px 10px 0 0;
-  font-size: 24px;
+.number{
+  text-align: center;
 }
 
-.fas{
-  margin: 0px 10px 0 0;
-  font-size: 24px;
+.social-icons {
+  display: flex; 
+  justify-content: center; 
+  margin-top: 10px;
+}
+
+.social-icons a {
+  margin: 0 10px 0 0; /* Отступы между иконками */
+  font-size: 24px; /* Размер иконок */
+}
+
+.fa-vk{
+  color: #0077FF;
+}
+
+.fa-telegram{
+  color: #2AABEE;
+}
+
+.fa-envelope{
+  color: 	#ff5d5d;
 }
 
 .linee{

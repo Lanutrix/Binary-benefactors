@@ -4,7 +4,7 @@
   align-items: center;
   padding: 10px 30px 10px 10px ; /* Внутренние отступы */
   margin: 0 auto; /* Внешние отступы только слева и справа */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 11px 4px 26px #00000057, 45px 17px 48px #0000004c, 101px 38px 65px #0000002e, 180px 67px 77px #0000000d, 281px 105px 84px #00000003;
   background: rgba(32, 21, 21, 0.57);
   border-radius: 36px;
   width: calc(80% - 40px);
