@@ -1,42 +1,45 @@
+import unittest
 import requests
 
-# Настройки сервера
-BASE_URL = "http://10.131.56.157:8999"
-UPLOAD_ENDPOINT = f"{BASE_URL}/upload-file/"
-LIST_FILES_ENDPOINT = f"{BASE_URL}/files/"
-file_name = "README.md"
-print(f"URL: {UPLOAD_ENDPOINT}")
+class TestUploadFileEndpoint(unittest.TestCase):
 
-# Функция для загрузки файла
-def upload_file(file_name):
-    try:
-        with open(file_name, 'rb') as file:
-            files = {'file': (file_name, file)}
-            response = requests.post(UPLOAD_ENDPOINT, files=files)
-            if response.status_code == 200:
-                print("Файл успешно загружен.", response.content)
-            else:
-                print(f"Ошибка при загрузке файла: {response.status_code}")
-                print(response.text.encode('utf8'))
-    except FileNotFoundError:
-        print(f"Файл {file_name} не найден.")
+    BASE_URL = "http://192.168.43.53:8999/upload-file/"  # Замените на ваш хост и порт
 
-# Функция для получения списка файлов
-def list_files():
-    try:
-        response = requests.get(LIST_FILES_ENDPOINT)
-        if response.status_code == 200:
-            print("Список файлов:")
-            print(response.json())
-        else:
-            print(f"Ошибка при получении списка файлов: {response.status_code}")
-            print(response.text)
-    except requests.RequestException as e:
-        print(f"Ошибка при запросе: {e}")
+    def test_upload_photo(self):
+        # Открываем файл для теста
+        with open("face.jpg", "rb") as file:
+            # Формируем данные для запроса
+            files = {"file": file}
+            data = {
+                "type_file": "video",
+                "name_object": "face",
+                "grade_blur": "20"
+            }
+            
+            # Отправляем POST-запрос
+            response = requests.post(self.BASE_URL, files=files, data=data)
+            
+            # Проверяем статус код и ответ
+            self.assertEqual(response.status_code, 200)
+            self.assertIn("File uploaded successfully", response.json().get("message"))
+
+    def test_upload_video(self):
+        # Открываем файл для теста
+        with open("v2.mp4", "rb") as file:
+            # Формируем данные для запроса
+            files = {"file": file}
+            data = {
+                "type_file": "video",
+                "name_object": "face",
+                "grade_blur": "50"
+            }
+            
+            # Отправляем POST-запрос
+            response = requests.post(self.BASE_URL, files=files, data=data)
+            
+            # Проверяем статус код и ответ
+            self.assertEqual(response.status_code, 200)
+            self.assertIn("File uploaded successfully", response.json().get("message"))
 
 if __name__ == "__main__":
-    # Загрузка файла
-    upload_file(file_name)
-
-    # Получение списка файлов
-    list_files()
+    unittest.main()

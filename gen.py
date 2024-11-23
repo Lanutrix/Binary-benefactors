@@ -1,5 +1,6 @@
 import random
 import string
+import os
 
 def generate_id(n):
     """
@@ -20,3 +21,7 @@ if "__main__" == __name__:
     id_length = 10
     unique_id = generate_id(id_length)
     print(f"Сгенерированный ID: {unique_id}")
+    os.chdir('static')
+    print(os.getcwd())
+    os.chdir('..')
+    print(os.getcwd())
