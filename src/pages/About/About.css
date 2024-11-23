@@ -13,6 +13,7 @@
 
 .title-about {
   margin: 35px auto;
+  text-shadow: 10px 5px 25px #0000005e;
 }
 
 .cart{
@@ -91,8 +92,9 @@
 }
 
 .social-icons a {
-  margin: 0 10px 0 0; /* Отступы между иконками */
-  font-size: 24px; /* Размер иконок */
+  margin: 0 10px 0 0;
+  font-size: 24px;
+  text-shadow: 4px 2px 9px #0000000f;
 }
 
 .fa-vk{
