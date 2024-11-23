@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom"; // Для маршрута на страницу загрузки
 import Header from "../../components/Header/Header";
 import "./Home.css";
 import womanImage from "../../assets/woman-mask.png"; // Импорт изображения
@@ -22,12 +23,13 @@ function Home() {
             others don’t need to see?<br/><br/> Try our service, which will help you with
             this!
           </p>
-          <button className="try-btn">
+          {/* Кнопка для перехода на страницу загрузки */}
+          <Link to="/upload" className="try-btn">
             <span className="icon">
               <img src={require("../../assets/face-icon.png")} alt="Face Icon" />
             </span>
             Trying
-          </button>
+          </Link>
         </div>
         <div className="image-content">
           <img src={womanImage} alt="Woman in mask" />

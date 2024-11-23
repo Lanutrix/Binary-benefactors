@@ -9,9 +9,62 @@
     flex-direction: column;
     align-items: center;
     gap: 20px; /* Пространство между элементами */
-  }
-  
-  .title-about {
-    margin: 35px auto;
-  }
-  
+}
+
+.title-about {
+  margin: 35px auto;
+}
+
+.cart{
+  display: flex;
+  align-items: center;
+  background: #efefef;
+  border-radius: 30px;
+}
+
+.total-flex{
+  display: flex;
+  gap: 20px;
+  border-radius: 30px;
+}
+
+.surname{
+  font-family: 'Unbounded';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+}
+ 
+.surnameO{
+  color: #68DA9E;
+}
+
+.text-cart{
+  padding: 0 20px;
+}
+
+.skilz{
+  font-family: 'Unbounded';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 26px;
+  /* identical to box height */
+  letter-spacing: 0.05em;
+  color: #000000;
+}
+
+.fab{
+  margin: 0px 10px 0 0;
+  font-size: 24px;
+}
+
+.fas{
+  margin: 0px 10px 0 0;
+  font-size: 24px;
+}
+
+.linee{
+  color:#000000
+}

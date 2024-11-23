@@ -24,7 +24,7 @@ function Header() {
       <nav className="nav-links">
         <a href="/about">About us</a>
         <a href="#contact">Contact us</a>
-        <a href="#upload">Upload File</a>
+        <a href="/upload">Upload File</a>
         <a href="#view">View Sends</a>
       </nav>
       <div className="auth-links">
@@ -32,7 +32,7 @@ function Header() {
           <>
             <span className="user-greeting">Hello, {user.name}!</span>
             <button className="logout-btn" onClick={logout}>
-              Logout
+              Log out
             </button>
           </>
         ) : (

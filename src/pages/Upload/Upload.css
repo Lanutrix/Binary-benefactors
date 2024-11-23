@@ -1,0 +1,107 @@
+.upload-page {
+    height: 100vh;
+    background: url('/public/Mesh_gradient.png') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+    padding: 3% 0 0 0;
+  }
+  
+  .upload-container {
+    background: rgba(31, 21, 21, 0.57);
+    border-radius: 20px;
+    padding: 10px;
+    margin: 40px 0 0 0;
+    width: 60%;
+    max-height: 480px;
+    max-width: 900px;
+    color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  h3 {
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+  
+  .input-section {
+    margin: 20px 0;
+  }
+
+  .settings-section {
+    margin: 20px 0;
+  }
+  
+  .input-box {
+    text-align: center;
+    border: 2px dashed rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    padding: 20px;
+  }
+  
+  .file-label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    color: white;
+    font-size: 1.2rem;
+  }
+  
+  .file-icon {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .file-label input {
+    display: none;
+  }
+  
+  .file-text {
+    margin-top: 10px;
+  }
+  
+  .blur-settings label {
+    display: block;
+    margin: 10px 0 5px;
+  }
+  
+  .blur-settings select, .blur-settings input {
+    width: 100%;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .blur-range {
+    margin-top: 10px;
+  }
+  
+  .submit-btn {
+    width: 100%;
+    padding: 12px 20px;
+    background: #e91e63;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: background 0.3s;
+  }
+  
+  .submit-btn:hover {
+    background: #c2185b;
+  }
+  
+  .global-style{
+    display: flex;
+    justify-content: space-evenly;
+    align-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
