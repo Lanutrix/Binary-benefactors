@@ -1,0 +1,127 @@
+.home {
+  background-image: url('/public/Mesh_gradient.png'); /* Задний фон */
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  padding: 42px 0px 0 0; /* Отступы для всей страницы */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px; /* Пространство между элементами */
+}
+
+.main-content {
+  display: flex;
+  justify-content: space-between; /* Разделить текст и изображение */
+  align-items: center;
+  max-width: 1200px; /* Максимальная ширина контента */
+  width: 100%;
+  gap: 20px; /* Пространство между текстом и изображением */
+  padding: 40px 0px 40px 40px;
+  /*
+  background-color: rgba(0, 0, 0, 0.7);  Темный фон с прозрачностью 
+  border-radius: 20px;  Закругленные углы 
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);  Тень 
+  color: white;
+  */
+}
+
+.text-title{
+  color: #A5566F;
+}
+
+h1{
+  margin: 0px;
+  font-family: 'Unbounded';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 120%;
+  /* or 48px */
+  letter-spacing: 0.04em;
+  text-shadow: 12px 9px 16px rgba(0, 0, 0, 0.92), 13px 7px 20px rgba(0, 0, 0, 0.92), 20px 11px 20px rgb(63 59 59 / 92%);
+  font-weight: 900; /* Максимально жирный */
+}
+
+.text-content {
+  flex: 1;
+  text-align: left;
+}
+
+.text{
+  font-family: 'Unbounded';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.05em;
+  font-weight: 900; /* Максимально жирный */
+  color: #756F71;
+  max-width: 420px;
+  margin: 40px 0px;
+}
+
+.text-content {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  color: #d3d3d3;
+}
+
+.try-btn {
+  display: flex;
+  align-items: center;
+  gap: 14px; /* Расстояние между иконкой и текстом */
+  background: linear-gradient(145deg, #2a202e, #3b2d40); /* Градиент для кнопки */
+  color: white;
+  padding: 5px 15px;
+  border: none;
+  border-radius: 40px;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+  font-family: 'Unbounded';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 30px;
+  letter-spacing: 0.05em;
+}
+
+.try-btn:hover {
+  box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.4), -6px -6px 12px rgba(255, 255, 255, 0.2);
+  transform: scale(1.05);
+}
+
+.try-btn .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ae567a;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.3), inset -2px -2px 4px rgba(255, 255, 255, 0.1);
+}
+
+.try-btn .icon img {
+  width: 70%; /* Размер изображения внутри круга */
+  height: 70%;
+  object-fit: contain; /* Адаптация размера изображения */
+}
+
+
+
+.image-content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 15px;
+  /*box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);*/
+}

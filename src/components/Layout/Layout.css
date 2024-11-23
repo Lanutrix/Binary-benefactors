@@ -1,0 +1,13 @@
+.layout {
+    background-image: url('/public/Mesh_gradient.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+  }
+  
+  .content {
+    padding: 20px;
+    color: white;
+  }
+  

@@ -1,0 +1,56 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px 10px 10px ; /* Внутренние отступы */
+  margin: 0 auto; /* Внешние отступы только слева и справа */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background: rgba(14, 14, 14, 0.57);
+  border-radius: 36px;
+  width: calc(80% - 40px);
+  box-sizing: border-box;
+}
+
+.logo img {
+  height: 50px; /* Размер логотипа */
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px; /* Расстояние между ссылками */
+}
+
+.signup-btn{
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: white;
+  background-color: transparent;
+  font-size: 13px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 12px;
+  transition: color 0.3s ease; /* Эффект при наведении */
+}
+
+.nav-links a:hover {
+  color: #61dafb; /* Подсветка */
+}
+
+.auth-links {
+  display: flex;
+  gap: 15px; /* Расстояние между кнопками */
+}
+
+.auth-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.auth-links a:hover {
+  color: #61dafb;
+}

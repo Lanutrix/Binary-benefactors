@@ -1,0 +1,17 @@
+/* src/pages/About/About.css */
+.about {
+    background-image: url('/public/Mesh_gradient.png'); /* Задний фон */
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    padding: 42px 0px 0 0; /* Отступы для всей страницы */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; /* Пространство между элементами */
+  }
+  
+  .title-about {
+    margin: 35px auto;
+  }
+  
