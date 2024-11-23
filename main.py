@@ -6,6 +6,8 @@ from flask_cors import CORS
 from collections import deque
 import time
 import gen
+from multiprocessing import Process
+
 
 dp = []
 
@@ -41,17 +43,17 @@ def limit_requests():
 
 def blur_video(type_file: str, name_object: str, grade_blur: int, path: str, output_path: str) -> bool:
     try:
-        process = subprocess.Popen(
-            f'.\\XACK.exe {type_file} {name_object} {grade_blur} {path} {output_path}',
-            shell=True,
-            stdout=subprocess.PIPE,
-            stderr=subprocess.PIPE
-        )
-        print(f"Started process with PID: {process.pid}")
+        jj = f'.\\XACK.exe {type_file} {name_object} {grade_blur} {path} {output_path}'
+        os.system(jj)
         return True
     except Exception as e:
         print(f"Error in blur_video_async: {str(e)}")
         return False
+
+
+def start_blur_video(type_file: str, name_object: str, grade_blur: int, path: str, output_path: str):
+    Process(target=blur_video, args=(type_file, name_object, grade_blur, path, output_path,), daemon=True).start()
+    return True
 
 
 @app.route("/upload-file/", methods=["POST"])
@@ -83,7 +85,8 @@ def upload_file():
         os.chdir('static')
         file.save(file_path)
 
-        f =  blur_video(type_file, name_object, grade_blur, file_path, output_path)
+        # time.sleep(0.1)
+        f =  start_blur_video(type_file, name_object, grade_blur, file_path, output_path)
         os.chdir('..')
         if f:
             dp.append(output_path)

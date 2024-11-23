@@ -11,7 +11,7 @@ class TestUploadFileEndpoint(unittest.TestCase):
             # Формируем данные для запроса
             files = {"file": file}
             data = {
-                "type_file": "video",
+                "type_file": "photo",
                 "name_object": "face",
                 "grade_blur": "20"
             }
