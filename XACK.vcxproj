@@ -138,39 +138,17 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <Image Include="bl.jpeg" />
-    <Image Include="bus.jpg" />
-    <Image Include="cat.jpeg" />
-    <Image Include="d.jpg" />
-    <Image Include="t.jpg" />
-    <Image Include="test.jpg" />
-    <Image Include="zidane.jpg" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="yolo11m.onnx" />
     <None Include="yolov8m-face.onnx" />
     <None Include="yolov8\README.md" />
   </ItemGroup>
   <ItemGroup>
-    <Xml Include="haarcascade_frontalface_alt.xml" />
-    <Xml Include="lbpcascade_frontalface.xml" />
-    <Xml Include="lbpcascade_profileface.xml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Media Include="out.mp4" />
-    <Media Include="v1.mp4" />
-    <Media Include="v1o.mp4" />
-    <Media Include="v2.mp4" />
-    <Media Include="v3.mp4" />
-    <Media Include="v4.mp4" />
-    <Media Include="c.mp4" />
-  </ItemGroup>
-  <ItemGroup>
-    <Text Include="classes.txt" />
-    <Text Include="yolov8\CMakeLists.txt" />
+    <Text Include="yolov8\yoloclasses.txt" />
+    <Text Include="yolov8\yoloface.txt" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="yolov8\inference.cpp" />
+    <ClCompile Include="yolov8\bluring.cpp" />
     <ClCompile Include="yolov8\main.cpp" />
   </ItemGroup>
   <ItemGroup>

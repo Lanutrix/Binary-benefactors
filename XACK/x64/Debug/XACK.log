@@ -1,0 +1,5 @@
+﻿  main.cpp
+D:\Programming\C++\ML\XACK_23_04_24\Binary-benefactors\yolov8\inference.h(42,37): warning C4305: 'initializing': truncation from 'double' to 'float'
+  (compiling source file 'yolov8/main.cpp')
+  
+  XACK.vcxproj -> D:\Programming\C++\ML\XACK_23_04_24\Binary-benefactors\x64\Debug\XACK.exe
