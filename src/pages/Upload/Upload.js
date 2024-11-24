@@ -183,7 +183,7 @@ function Upload() {
                       -- Select Object --
                     </option>
                     <option value="face">Face</option>
-                    <option value="carPlate">Car Plate</option>
+                    <option value="carPlate">Car</option>
                     <option value="object">Other Object</option>
                   </select>
 
