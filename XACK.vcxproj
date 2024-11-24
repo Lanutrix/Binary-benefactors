@@ -138,9 +138,9 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <None Include="yolo11m.onnx" />
-    <None Include="yolov8m-face.onnx" />
     <None Include="yolov8\README.md" />
+    <None Include="yolov8\yolo11m.onnx" />
+    <None Include="yolov8\yolov8m-face.onnx" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="yolov8\yoloclasses.txt" />

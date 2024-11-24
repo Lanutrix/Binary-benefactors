@@ -18,10 +18,10 @@
     <None Include="yolov8\README.md">
       <Filter>Source Files</Filter>
     </None>
-    <None Include="yolov8m-face.onnx">
+    <None Include="yolov8\yolo11m.onnx">
       <Filter>Source Files</Filter>
     </None>
-    <None Include="yolo11m.onnx">
+    <None Include="yolov8\yolov8m-face.onnx">
       <Filter>Source Files</Filter>
     </None>
   </ItemGroup>

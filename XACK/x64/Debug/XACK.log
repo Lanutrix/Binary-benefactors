@@ -1,5 +1,12 @@
-﻿  main.cpp
+﻿  bluring.cpp
+D:\Programming\C++\ML\XACK_23_04_24\Binary-benefactors\yolov8\inference.h(42,37): warning C4305: 'initializing': truncation from 'double' to 'float'
+  (compiling source file 'yolov8/bluring.cpp')
+  
+D:\Programming\C++\ML\XACK_23_04_24\Binary-benefactors\yolov8\bluring.cpp(16,39): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+D:\Programming\C++\ML\XACK_23_04_24\Binary-benefactors\yolov8\bluring.cpp(16,26): warning C4267: 'initializing': conversion from 'size_t' to 'const int', possible loss of data
+  main.cpp
 D:\Programming\C++\ML\XACK_23_04_24\Binary-benefactors\yolov8\inference.h(42,37): warning C4305: 'initializing': truncation from 'double' to 'float'
   (compiling source file 'yolov8/main.cpp')
   
+  Generating Code...
   XACK.vcxproj -> D:\Programming\C++\ML\XACK_23_04_24\Binary-benefactors\x64\Debug\XACK.exe

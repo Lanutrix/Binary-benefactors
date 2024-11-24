@@ -47,6 +47,7 @@ private:
     cv::dnn::Net net;
 };
 
-cv::Mat bluring(const std::string& objType, int blurRate, const cv::Mat& frame, Inference& inf);
+cv::Mat bluring(const std::string& objType, int blurRate, const cv::Mat& frame, Inference& inf, bool flag,
+    cv::Mat change);
 
 #endif // INFERENCE_H
