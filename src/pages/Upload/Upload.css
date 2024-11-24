@@ -29,11 +29,11 @@
   }
   
   .input-section {
-    margin: 20px 0;
+    margin: 10px 0;
   }
 
   .settings-section {
-    margin: 20px 0;
+    margin: 10px 0;
   }
   
   .input-box {
@@ -182,7 +182,16 @@
     cursor: pointer;
   }
 
-  .upload-btn-section{
-    display: flex;
-    justify-content: center;
+  .load-text{
+    font-size: 1.2rem;
+    text-decoration: underline;
+    color: rgb(255,255,255, 0.10);
+  }
+
+  .global-style{
+    text-align: center;
+  }
+
+  .upload-sec{
+    padding: 55px 0 0 0;
   }
