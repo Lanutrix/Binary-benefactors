@@ -16,8 +16,8 @@
     padding: 10px;
     margin: 40px 0 0 0;
     width: 60%;
-    max-height: 480px;
-    max-width: 900px;
+    width: 1000px;
+    height: 600px;
     color: white;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
   }
@@ -37,10 +37,16 @@
   }
   
   .input-box {
+    display: flex;
     text-align: center;
-    border: 2px dashed rgba(255, 255, 255, 0.5);
-    border-radius: 10px;
+    border: 2px dashed rgba(0, 0, 0, 0.5);
+    border-radius: 25px;
     padding: 20px;
+    width: 100%;
+    height: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
   }
   
   .file-label {
@@ -50,11 +56,13 @@
     cursor: pointer;
     color: white;
     font-size: 1.2rem;
+    padding:  15px 0 0 0 ;
   }
   
   .file-icon {
-    font-size: 2rem;
+    font-size: 80px;
     margin-bottom: 10px;
+    color: black
   }
   
   .file-label input {
@@ -63,6 +71,7 @@
   
   .file-text {
     margin-top: 10px;
+    color: #464646;
   }
   
   .blur-settings label {
@@ -80,9 +89,24 @@
   .blur-range {
     margin-top: 10px;
   }
+
+  .submit-btn-section{
+    display: flex;
+    justify-content: center;
+  }
   
   .submit-btn {
-    width: 100%;
+    border-radius: 25px;
+    background-color: #a5566f;
+    align-self: center;
+    color: #e8e8e8;
+    text-align: center;
+    letter-spacing: 0.75px;
+    padding: 9px 35px;
+    font: 400 13px Unbounded, sans-serif;
+    border: none;
+    cursor: pointer;
+    /* width: 100%;
     padding: 12px 20px;
     background: #e91e63;
     color: white;
@@ -90,18 +114,75 @@
     border-radius: 10px;
     cursor: pointer;
     font-size: 1.2rem;
-    transition: background 0.3s;
+    transition: background 0.3s; */
   }
   
   .submit-btn:hover {
     background: #c2185b;
   }
   
-  .global-style{
+  /* .global-style{
     display: flex;
     justify-content: space-evenly;
     align-content: space-between;
     align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
+  } */
+
+  .two-column-layout{
+    display: flex;
+    justify-content: space-evenly;
+    align-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+ 
+  .content-box{
+    width: 330px;
+    height: 300px;
+    background-color: #D9D9D9;
+    padding: 25px;
+    border-radius: 32px;
+  }
+
+  .upload-icon {
+    aspect-ratio: 1;
+    object-fit: contain;
+    object-position: center;
+    width: 125px;
+    align-self: center;
+    max-width: 100%;
+  }
+
+  .file-text {
+    border-radius: 20px;
+    background-color: #a5566f;
+    font-size: 15px;
+    color: #e8e8e8;
+    font-weight: 400;
+    letter-spacing: 0.75px;
+    padding: 10px 16px;
+    margin: 20px 0 0 0;
+    border: none;
+    cursor: pointer;
+  }
+
+  .load-model-btn {
+    border-radius: 25px;
+    background-color: #774a8b;
+    margin-top: 35px;
+    color: #e8e8e8;
+    text-align: center;
+    letter-spacing: 0.75px;
+    padding: 13px 35px 13px;
+    font: 400 15px Unbounded, sans-serif;
+    border: none;
+    cursor: pointer;
+  }
+
+  .upload-btn-section{
+    display: flex;
+    justify-content: center;
   }
