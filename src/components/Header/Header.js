@@ -23,9 +23,9 @@ function Header() {
       </div>
       <nav className="nav-links">
         <a href="/about">About us</a>
-        <a href="#contact">Contact us</a>
+        <a href="/contact">Contact us</a>
         <a href="/upload">Upload File</a>
-        <a href="#view">View Sends</a>
+        <a href="/history">View Sends</a>
       </nav>
       <div className="auth-links">
         {user ? (
